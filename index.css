@@ -13,13 +13,16 @@ body{
 /* note : this is pure CSS area. Just see how they link to either JS and html. */
 .clicked {
     color: #7f8c8d;
-  }
+}
   
-  .form,
-  .greetings {
-    display: none;
-  }
+.form {
+      display: none
+}
   
-  .showing {
-    display: block;
-  }
+.greeting { /* linked to [const]'s greeting, in the greeting.js */
+display: none;
+}
+
+.showing {
+display: block;
+}

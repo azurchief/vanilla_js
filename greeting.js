@@ -2,8 +2,9 @@ const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
     greeting = document.querySelector(".js-greetings"); /* checkpoint 1 */
 
-const USER_LS = "currentUser",
-    SHOWING_CN = "showing";
+    // DO NOT GET CONFUSED - USER_LS is class name //
+const USER_LS = "currentUser", // currentUser is class name & means same as USER_LS, to let it work here in JavaScript //
+    SHOWING_CN = "showing"; // "showing" class does exist on css file. //
 
 function saveName(text) { //3.3 , 3 //
     localStorage.setItem(USER_LS, text);
@@ -31,8 +32,11 @@ function loadName() {
     const currentUser = localStorage.getItem(USER_LS);
     if (currentUser === null) {
         // Attention! -> askForName right below's role is: to call this function here, to let user to input in that input box(where placeholder displays)//
+        // summary : she is not //
         askForName();
-    } else { // otherwise, calling paintGreeting function. role is, to remove SHOWING_CN. //
+        // otherwise, calling paintGreeting function. role is, to remove SHOWING_CN. //
+        // summary: she is //
+    } else {
         paintGreeting(currentUser);
     }
 }
