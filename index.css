@@ -15,11 +15,8 @@ body{
     color: #7f8c8d;
 }
   
-.form {
-      display: none
-}
-  
-.greeting { /* linked to [const]'s greeting, in the greeting.js */
+.form,  
+.greetings { /* linked to [const]'s greeting, in the greeting.js */
 display: none;
 }
 

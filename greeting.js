@@ -37,7 +37,8 @@ function loadName() {
         // otherwise, calling paintGreeting function. role is, to remove SHOWING_CN. //
         // summary: she is //
     } else {
-        paintGreeting(currentUser);
+        paintGreeting(currentUser); 
+        // 해석: because currentUser is null(nothing, no value is present, but if currentUser has some new value given by input, then paintGreeting(currentUser) works!)
     }
 }
 
